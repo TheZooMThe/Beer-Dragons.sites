@@ -1,0 +1,109 @@
+/* Общие стили для доски розыска */
+body {
+    background-color: #3e2c20;
+    color: #f0e5d8;
+    font-family: 'Georgia', serif;
+    padding: 20px;
+}
+
+.tavern-header {
+    background-color: #5c3b1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #2e1d10;
+}
+
+.tavern-header h1 {
+    font-size: 3rem;
+    color: #f4d47c;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f0e5d8;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tavern-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2e1d10;
+    border: 2px solid #5c3b1e;
+    border-radius: 10px;
+}
+
+.tavern-section h2 {
+    font-size: 2rem;
+    color: #f4d47c;
+    border-bottom: 2px solid #f4d47c;
+    margin-bottom: 20px;
+}
+
+/* Стили для карточек преступников */
+.bounty-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.bounty-card {
+    background-color: #4a341c;
+    border: 2px solid #f4d47c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bounty-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #f4d47c;
+    margin-bottom: 10px;
+}
+
+.bounty-card h3 {
+    font-size: 1.5rem;
+    color: #f4d47c;
+    margin-bottom: 10px;
+}
+
+.bounty-card p {
+    font-size: 1.2rem;
+    color: #f0e5d8;
+}
+
+.bounty-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tavern-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #5c3b1e;
+    border-top: 5px solid #2e1d10;
+    color: #f0e5d8;
+}
+
+.tavern-footer p {
+    font-size: 1rem;
+}

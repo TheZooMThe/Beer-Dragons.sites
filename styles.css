@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3e2c20;
+    color: #f0e5d8;
+    font-family: 'Georgia', serif;
+    padding: 20px;
+}
+
+.tavern-header {
+    background-color: #5c3b1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #2e1d10;
+}
+
+.tavern-header h1 {
+    font-size: 3rem;
+    color: #f4d47c;
+    font-family: 'Celtic', fantasy;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f0e5d8;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tavern-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2e1d10;
+    border: 2px solid #5c3b1e;
+    border-radius: 10px;
+}
+
+.tavern-section h2 {
+    font-size: 2rem;
+    color: #f4d47c;
+    border-bottom: 2px solid #f4d47c;
+    margin-bottom: 20px;
+}
+
+.scroll {
+    background-image: url('parchment-texture.jpg');
+    background-size: cover;
+    padding: 20px;
+    font-style: italic;
+    border: 2px solid #5c3b1e;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.bounty-list, .character-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bounty-list li, .character-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4a341c;
+    border: 1px solid #f4d47c;
+    border-radius: 5px;
+}
+
+.tavern-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #5c3b1e;
+    border-top: 5px solid #2e1d10;
+    color: #f0e5d8;
+}
+
+.tavern-footer p {
+    font-size: 1rem;
+}
+
+/* Дополнительные стили для красоты */
