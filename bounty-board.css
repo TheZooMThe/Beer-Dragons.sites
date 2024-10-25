@@ -1,9 +1,26 @@
 /* Общие стили для доски розыска */
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
     background-color: #3e2c20;
     color: #f0e5d8;
     font-family: 'Georgia', serif;
     padding: 20px;
+}
+
+/* Липкий футер */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
 }
 
 .tavern-header {
@@ -97,7 +114,6 @@ nav ul li a:hover {
 
 .tavern-footer {
     text-align: center;
-    margin-top: 40px;
     padding: 20px;
     background-color: #5c3b1e;
     border-top: 5px solid #2e1d10;
