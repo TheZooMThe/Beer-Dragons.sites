@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 /* Стили для карточек преступников */
-.bounty-cards {
+#bounty-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.bounty-card img {
+.bounty-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -96,13 +96,18 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.bounty-card h3 {
+.bounty-name{
     font-size: 1.5rem;
     color: #f4d47c;
     margin-bottom: 10px;
 }
 
-.bounty-card p {
+.bounty-reward {
+    font-size: 1.2rem;
+    color: #f0e5d8;
+}
+
+.bounty-issued-by{
     font-size: 1.2rem;
     color: #f0e5d8;
 }
