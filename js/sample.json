@@ -1,0 +1,19 @@
+{
+    "wanted_list": [
+      {
+        "name": "Щёлк",
+        "reward": 1000,
+        "currency": "золотых",
+        "image_url": "URL_картинки_Щёлк",
+        "issued_by": "Big Bad Wolf"
+
+      },
+      {
+        "name": "Лют Хелдер",
+        "reward": 1000,
+        "currency": "золотых",
+        "image_url": "img/lut-helder.jpg",
+        "issued_by": "Slotova jednotka"
+      }
+    ]
+  }
