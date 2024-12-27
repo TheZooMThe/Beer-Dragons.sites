@@ -5,7 +5,6 @@ html, body{
 body {
     color: #f0e5d8;
     font-family: 'Georgia', serif;
-    /* height: 100vh; */
 }
 
 #background-wood{
@@ -18,12 +17,12 @@ body {
 }
 
 #navbar-wood{
-    background-image: url('..//assets/1672792532_grizly-club-p-tekstura-temnogo-dereva-2.jpg');
+    background-image: url('../assets/1672792532_grizly-club-p-tekstura-temnogo-dereva-2.jpg');
     height: 125px;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 9;
 }
 
 #navbar{
@@ -33,30 +32,57 @@ body {
 }
 
 #tavern-sign{
-    margin-top: 20px;
-    background-image: url('..//assets/pngwing.com\ \(2\).png');
-    transform: rotate(-5deg);
+    margin-top: -80px;
+    position: fixed;
+    background-image: url('../assets/pngwing.com\ \(3\).png');
     background-size: cover;
     background-position: center;
-    width: 361px;
-    height: 133px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    width: 288px;
+    height: 252px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
+}
+
+#tavern-sign-text{
+    margin-top: 90px;
     font-size: 40px;
+    user-select: none;
+}
+
+
+#back-to-menu-sign{
+    background-image: url('../assets/pngwing.com\ \(1\).png');
+    z-index: 11;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    top: 23px;
+    left: 60px;
+    width: 211px;
+    height: 80px;
+    transition: all 0.25s;
+}
+
+#back-to-menu-sign:hover{
+    transform: rotate(-5deg) translateY(7px) translateX(3px);
+
+}
+
+#back-to-menu-text{
+    font-size: 25px;
     text-align: center;
+    color: #f0e5d8;
+    user-select: none;
 }
 
+/* /////////////////////////////////////////////////////// */
 
-
-#overlay{
-    height: 100vh;
-}
-
-#main-dude-grid{
+#main-wood-grid{
     justify-self: center;
     display: grid;
     grid-template-columns: 105px 800px 105px;
@@ -64,14 +90,10 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: fixed; 
-    top: 126px; /* Adjust this value to set where the grid should stick */
+    top: 125px;
     left: 50%;
     transform: translate(-50%, 0%);
     
-}
-
-#main-dude{
-    width: 800px;
 }
 
 .vertical-wood-left{
@@ -88,133 +110,69 @@ body {
 
 #main-wood{
     grid-area: 1 / 2 / 2 / 3;
+    max-width: 800px;
 }
 
 
-#second-background {
-    text-align: center;
-    position: sticky;
-    top: 125px;
-    z-index: 0; 
-    height: calc(100vh - 126px);
-}
 
-#second-background-img {
-    height: 100vh;
-    width: 800px;
-}
+/* css for bounty cards */
 
-p{
-    position: relative;
-    z-index: 100;
-}
-
-
-/* navigation signs */
-
-#signs-div{
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    left: 50%;
-    margin-left: -375px;
-    top: -220px;
-    z-index: 5;
-    justify-self: center ;
-    transition: transform 0.5s ease;
-}
-
-.visible{
-    transform: translateY(200px);
-}
-
-.nav-sign{
-    background-image: url('../assets/pngwing.com.png');
-
-
-    display: flex;
+#characters{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    justify-self: center;
     justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    top: 200px;
-    left: 60px;
-    width: 250px;
-    height: 210px;
-    transition: all 0.25s;
-}
-
-.nav-sign:hover{
-    transform: translateY(20px);
-}
-
-.nav-text{
-    color: #f0e5d8;
-    font-size: 30px;
-    margin: 35px 0 0 0;
-    max-width: 200px;
-    text-align: center;
-}
-
-a{
-    color: #f0e5d8;
-    text-decoration: none;
-}
-
-
-/* content css */
-
-#content-flex{
+    position: relative;
+    flex-flow: wrap row;
+    z-index: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 736px;
     gap: 40px;
 }
 
-.content-div{
-    width: 700px;
-    background-color: rgba(45, 43, 43, 0.9);
-    z-index: 1;
+
+.bounty-card{
+    width: 200px;
+    border: 3px solid rgba(40, 6, 6, 1);
+    background-color: rgba(80, 71, 71, 1);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    padding: 15px;
-
-}
-
-
-.content-span{
-    border: 3px solid rgba(80, 71, 71, 1);
-    width: 690px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.content-main-p{
-    font-size: 32px;
-    margin: 0 0 10px 0;
-}
-
-.content-sub-p{
-    font-size: 20px;
-    border: 1px solid rgba(80, 71, 71, 1);
-    border-radius: 15px;
-    margin: 5px 0;
-    padding: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding: 3px;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 320px;
     transition: all 0.25s;
 }
 
-.content-sub-p:hover{
+.bounty-card:hover{
+    transform: scale(1.1);
     cursor: pointer;
-    transform: scale(1.03);
 }
 
+.bounty-image{
+    width: 160px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
 
-#footer-text{
-    margin-bottom: 0;
+.bounty-name{
+    margin: 0;
+}
+
+.bounty-span{
+    border: 1px solid rgba(40, 6, 6, 1);
+    width: 120px;
+}
+
+.bounty-race{
+    margin: 0;
+}
+
+.bounty-class{
+    margin: 0 0 10px 0;
 }
 
 
@@ -295,3 +253,5 @@ a{
 .no-scroll {
     overflow: hidden;
 }
+
+

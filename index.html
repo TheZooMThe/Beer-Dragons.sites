@@ -5,44 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таверна "Усталая Сова"</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img\characters\logo.png">
 </head>
 
 
-<body>
-<div class="wrapper">
-    <header class="tavern-header">
-        <h1>Таверна "Усталая Сова"</h1>
-        <nav id="navbar">
-            <ul id="navbar-ul">
-                <li class="navbar-li"><a class="navbar-a" href="#chronicles">Летопись</a></li>
-                <li class="navbar-li"><a class="navbar-a" href="bounty-board.html">Доска розыска</a></li> <!-- Ссылка на новую страницу -->
-                <li class="navbar-li"><a class="navbar-a" href="#characters">Живые персонажи</a></li>
-            </ul>
-        </nav>
-    </header>
+<body id="body-container">
+    <div id="navbar-wood"></div>
+    <div id="background-wood"></div>
 
-    <section id="chronicles" class="tavern-section">
-        <h2>Летопись</h2>
-        <p>Здесь хранится история мира, овеянная легендами и мифами.</p>
-        <div class="scroll">
-            <p>Год 305: Возвращение Короля Арталана... (пример записи летописи)</p>
-            <!-- Добавьте ваши записи здесь -->
+    <nav id="navbar">
+        <div id="tavern-sign">
+            <p id="tavern-sign-text">Таверна <br> Усталая Сова</p>
         </div>
-    </section>
+    </nav>
 
-    <section id="characters" class="tavern-section">
-        <h2>Живые персонажи</h2>
-        <p>Список ключевых фигур, которые еще живы:</p>
-        <ul class="character-list">
-            <li>Алирион Серебряный — Эльф, маг</li>
-            <li>Крагор Молния — Орк, варвар</li>
-            <!-- Добавьте ваших персонажей -->
-        </ul>
-    </section>
-</div>
+    <div id="main-dude-grid">
+        <div class="vertical-wood-left"></div>
+        <img id="main-dude" src="assets/69757a1efdee2ed0d9ebdb5c8ba5f1af.jpg" alt="">
+        <div class="vertical-wood-right"></div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="signs-div">
+        <a href="chronicles.html">
+            <div class="nav-sign" id="chronicles-sign">
+                <p class="nav-text" id="chronicles-text">Летопись</p>
+            </div>
+        </a>
+
+        <a href="wanted.html">
+            <div class="nav-sign" id="wanted-sign">
+                <p class="nav-text" id="wanted-text">Доска розыска</p>
+            </div>
+        </a>
+
+        <a href="characters.html">
+            <div class="nav-sign" id="characters-sign">
+                <p class="nav-text" id="characters-text">Персонажи</p>
+            </div>
+        </a>
+    </div>
+    
+    <div id="second-background">
+        <img id="second-background-img" src="assets/1661203589_21-celes-club-p-temnie-doski-tekstura-krasivo-34.jpg" alt="">
+    </div>
+
+
+    <div id="content-flex">
+        <div id="chronicles-content-div" class="content-div">
+            <p class="content-main-p">Летопись</p>
+            <span class="content-span"></span>
+            <a href="chronicles.html"><p id="chronicles-sub-1" class="content-sub-p"></p></a>
+            <a href="chronicles.html"><p id="chronicles-sub-2" class="content-sub-p"></p></a>
+        </div>
+
+        <div id="chronicles-characters-div" class="content-div">
+            <p class="content-main-p">Персонажи</p>
+            <span class="content-span"></span>
+            <p id="characters-sub-1" class="content-sub-p"></p>
+            <p id="characters-sub-2" class="content-sub-p"></p>
+        </div>
+    </div>
+
+
+
 
     <footer class="tavern-footer">
-        <p>© 2024 Таверна "Усталая Сова" — Место для героев и легенд</p>
+        <p id="footer-text">© 2024 Таверна "Усталая Сова" — Место для героев и легенд</p>
     </footer>
+
+    <script src="js/signs.js"></script>
+    <script src="js/fetchIndex.js"></script>
+    <script src="js/characterWidget.js"></script>
 </body>
 </html>
