@@ -28,7 +28,11 @@ async function loadAllData() {
     chroniclesData = await chroniclesResponse.json();
     const charactersResponse = await fetch('js/sample.json');
     charactersData = await charactersResponse.json();
-    const [first, second] = getTwoRandomNumbers(0, 8);
+
+    const length = charactersData.character_list.length - 1;
+
+
+    const [first, second] = getTwoRandomNumbers(0, length);
 
     chroniclesSub1.textContent = `${chroniclesData.events[0].year} ${chroniclesData.events[0].day} ${chroniclesData.events[0].month} - ${chroniclesData.events[0].description}`;
     chroniclesSub2.textContent = `${chroniclesData.events[1].year} ${chroniclesData.events[1].day} ${chroniclesData.events[1].month} - ${chroniclesData.events[1].description}`;
