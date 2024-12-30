@@ -4,20 +4,26 @@ let charactersData = {};
 
 async function loadAllCharacters() {
 
-    const charactersResponse = await fetch('js/sample.json');
-    charactersData = await charactersResponse.json();
+  const charactersResponse = await fetch('js/sample.json');
+  charactersData = await charactersResponse.json();
 
-    const container = document.getElementById('characters');
+  const container = document.getElementById('characters');
 
-
-    for (const character of charactersData.character_list ) {
+  for (const character of charactersData.character_list) {
       const card = document.createElement('div');
       card.className = 'bounty-card';
       card.addEventListener('click', () => createCharacterWidget(character.id));
 
       const img = document.createElement('img');
       img.className = 'bounty-image';
-      img.src = character.wanted_img;
+
+      // Проверяем, если id равен 7, то с шансом 10% берем rolf_img
+      if (character.id === 7 && Math.random() < 0.1) {
+          img.src = character.rolf_img;
+      } else {
+          img.src = character.wanted_img;
+      }
+
       img.alt = character.name;
 
       const name = document.createElement('h2');
@@ -41,10 +47,8 @@ async function loadAllCharacters() {
       card.appendChild(race);
       card.appendChild(bountyClass);
       container.appendChild(card);
-    }
-
-
-
+  }
 };
+
 
 document.addEventListener('DOMContentLoaded', loadAllCharacters);
