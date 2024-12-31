@@ -22,7 +22,7 @@
       "artifacts": "Нет данных",
       "allies and organizations": "Нет данных",
       "character_img": "img/characters/lut.png",
-      "wanted_img": "img/characters/lut_wanted.jpg",
+      "wanted_img": "img/characters/lut_wanted.png",
       "wanted": true,
       "wanted_by": "Какой-то барон или феодал и одна страна",
       "reward": "1000 золотых"
@@ -185,7 +185,7 @@
       "allies and organizations": "Крепость Каэр Морхен",
       "character_img": "img/characters/ulfrun.png",
       "wanted_img": "img/characters/ulfrun_wanted.png",
-      "rolf_img": "img/characters/ulfrun_rofls",
+      "rolf_img": "img/characters/ulfrun_rofls.png",
       "wanted": false,
       "wanted_by": "",
       "reward": 0
@@ -265,7 +265,7 @@
       "backstory": "Батя ушел, а мать строчалась и чел попал на улицу где воровал чтоб выжить, в следствии чего стал плутом.",
       "artifacts": "Лютня-лук «мелодия стрел»",
       "allies and organizations": "Крепость Каэр Морхен",
-      "character_img": "img/characters/kazi.png",
+      "character_img": "img/characters/kazo.png",
       "wanted_img": "img/characters/kazo_wanted.png",
       "wanted": false,
       "wanted_by": "",

@@ -18,7 +18,7 @@ async function loadAllCharacters() {
       img.className = 'bounty-image';
 
       // Проверяем, если id равен 7, то с шансом 10% берем rolf_img
-      if (character.id === 7 && Math.random() < 0.1) {
+      if (character.id === 7 && Math.random() < 0.25) {
           img.src = character.rolf_img;
       } else {
           img.src = character.wanted_img;
