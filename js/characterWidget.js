@@ -14,6 +14,7 @@ function createCharacterWidget(characterId) {
         widgetContainer.id = 'character-widget';
 
         widgetContainer.innerHTML = `
+        <div id="widget-main">
             <div id="widget-content">
                 <div id="widget-picture-and-info">
                     <img src="${character.character_img}" alt="character image" id="character-img">
@@ -38,9 +39,17 @@ function createCharacterWidget(characterId) {
                     <b>Предыстория:</b> <br><br> ${character.backstory}
                 </p>
             </div>
+            </div>
         `;
         body.appendChild(widgetContainer);
 
+        window.onclick = (event) => {
+            if (event.target === widgetContainer) {
+                widgetContainer.remove();
+                document.getElementById('body-container').classList.remove('no-scroll');
+                document.getElementById('body-container').classList.remove('no-pointer-events');
+            }
+        };
         const closeButton = document.getElementById('widget-close-btn');
         closeButton.addEventListener('click', () => {
             widgetContainer.remove();
